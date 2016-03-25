@@ -2,6 +2,8 @@
 *.apk
 *.ap_
 .gitignore.swp
+FoodMenu/.gitignore
+FoodMenu/app/proguard-rules.pro
 
 # Files for the Dalvik VM
 *.dex
@@ -36,3 +38,5 @@ FoodMenu/proguard/
 
 # Android Studio captures folder
 captures/
+#mac
+.DS_Store
