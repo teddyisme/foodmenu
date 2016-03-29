@@ -1,19 +1,17 @@
 package com.lixinsheng.foodmenu.ui.activity;
 
 import android.content.Context;
+import android.support.v7.widget.AppCompatButton;
 import android.support.v7.widget.AppCompatTextView;
 import android.text.Html;
-import android.util.Log;
 import android.view.View;
 import android.widget.ImageView;
-import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
 import com.jakewharton.rxbinding.view.RxView;
 import com.lixinsheng.foodmenu.R;
 import com.lixinsheng.foodmenu.app.AppComponent;
-import com.lixinsheng.foodmenu.app.api.ApiService;
 import com.lixinsheng.foodmenu.base.BaseActivity;
 import com.lixinsheng.foodmenu.bean.FoodDetailResult;
 import com.lixinsheng.foodmenu.ui.activity.component.DaggerFoodDetailActivityComponent;
@@ -63,7 +61,7 @@ public class FoodDetailActivity extends BaseActivity {
     TextView food_description_block;
 
     @Bind(R.id.back_btn)
-    LinearLayout back_btn;
+    AppCompatButton back_btn;
 
     @Bind(R.id.title)
     AppCompatTextView title;

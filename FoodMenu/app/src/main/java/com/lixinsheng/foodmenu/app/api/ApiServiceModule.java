@@ -34,7 +34,7 @@ public class ApiServiceModule {
 //    classify 菜谱分类
 
     private static final String DOMAIN = "http://apis.baidu.com/tngou/cook/";
-    private static final String APIKEY = "your API_KEY";
+    private static final String APIKEY = "e509bfd159b1163da50b717f4be5a262";
 
     @Provides
     @Singleton

@@ -9,7 +9,6 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
-import android.widget.LinearLayout;
 
 import com.jakewharton.rxbinding.view.RxView;
 import com.lixinsheng.foodmenu.R;
@@ -42,7 +41,7 @@ public class FoodMenuActivity extends BaseActivity implements BaseRecycleAdapter
     MyRecycleView menulist;
 
     @Bind(R.id.back_btn)
-    LinearLayout back_btn;
+    AppCompatButton back_btn;
 
     @Bind(R.id.title)
     AppCompatTextView title;
