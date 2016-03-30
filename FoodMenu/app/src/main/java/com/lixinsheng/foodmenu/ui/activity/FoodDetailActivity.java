@@ -1,6 +1,7 @@
 package com.lixinsheng.foodmenu.ui.activity;
 
 import android.content.Context;
+import android.graphics.Bitmap;
 import android.support.v7.widget.AppCompatButton;
 import android.support.v7.widget.AppCompatTextView;
 import android.text.Html;
@@ -9,6 +10,11 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
+import com.bumptech.glide.load.engine.bitmap_recycle.BitmapPool;
+import com.bumptech.glide.load.resource.bitmap.BitmapTransformation;
+import com.bumptech.glide.load.resource.drawable.GlideDrawable;
+import com.bumptech.glide.request.animation.GlideAnimation;
+import com.bumptech.glide.request.target.SimpleTarget;
 import com.jakewharton.rxbinding.view.RxView;
 import com.lixinsheng.foodmenu.R;
 import com.lixinsheng.foodmenu.app.AppComponent;
@@ -107,6 +113,12 @@ public class FoodDetailActivity extends BaseActivity {
                 .centerCrop()
                 .crossFade()
                 .into(food_img);
+//                .into(new SimpleTarget<GlideDrawable>() {
+//                    @Override
+//                    public void onResourceReady(GlideDrawable resource, GlideAnimation<? super GlideDrawable> glideAnimation) {
+//                        food_img.setImageDrawable(resource);
+//                    }
+//                });
 
         food_name.setText(data.getName());
 

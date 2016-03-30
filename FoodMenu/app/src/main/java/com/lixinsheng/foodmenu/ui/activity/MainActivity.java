@@ -133,8 +133,7 @@ public class MainActivity extends BaseActivity {
 
     public void setClassify(ArrayList<Classify> list) {
         this.list = list;
-        ball_group.setVisibility(View.VISIBLE);
-        ball_group.setTexts(presenter.handleData(list));
+
 //        adapter = new ClassifyAdapter(list);
 //        adapter.setOnRecyclerViewListener(this);
 //        classify_list.setLayoutManager(new GridLayoutManager(this, 2));
@@ -143,6 +142,8 @@ public class MainActivity extends BaseActivity {
 
     public void setChoosedClassfy(ArrayList<Classify> choosedlist) {
         this.choosedlist = choosedlist;
+        ball_group.setVisibility(View.VISIBLE);
+        ball_group.setTexts(presenter.setBallText(choosedlist));
     }
 
     @Override

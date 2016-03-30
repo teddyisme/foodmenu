@@ -49,7 +49,6 @@ public class MainActivityPresenter {
                 .subscribe(new Action1<ArrayList<Classify>>() {
                     @Override
                     public void call(ArrayList<Classify> classifies) {
-//                        mainActivity.setClassify(classifies);
                         mainActivity.setClassify(classifies);
                         handleData(classifies);
                     }
@@ -80,7 +79,7 @@ public class MainActivityPresenter {
         return setBallText(choosedClassifies);
     }
 
-    private List<String> setBallText(ArrayList<Classify> choosedClassifies) {
+    public List<String> setBallText(ArrayList<Classify> choosedClassifies) {
         List<String> texts = new ArrayList<>();
         for (int i = 0; i < choosedClassifies.size(); i++) {
             texts.add(choosedClassifies.get(i).getName());
